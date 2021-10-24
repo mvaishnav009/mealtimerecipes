@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #272727;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #fffffa;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15%;
+  /* padding: 20px 15% 10px 15%; */
+}
+
+.logo {
+  cursor: pointer;
+  height: 65px;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  color: #fffffa;
+}
+
+.nav_links li a:hover {
+  transition: all 0.3s ease 0s;
+  color: #ffea01;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: #ffea01;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 600;
+  color: #272727;
+}
+
+button:hover {
+  background-color: rgba(255, 234, 1, 0.7);
+}
+
+.page {
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.page {
+  padding-top: 2rem;
+  min-height: calc(101vh - (6rem + 4rem));
+}
+
+.main-banner {
+  height: 50vh;
+  position: relative;
+  margin-bottom: 2rem;
+  background: url("../assets/bg-home.jpg") center/cover no-repeat;
+  border-radius: 10px;
+  border: #ffea01 2px solid;
+}
+.banner-text-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.banner-text {
+  color: #fffffa;
+  text-align: center;
+}
+
+.recipe-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+}
+
+.recipe-img-container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.recipe-menu a {
+  display: block;
+}
+.recipe-menu a:hover {
+  transition: all 0.3s ease 0s;
+  color: #ffea01;
+}
+
+.recipe-img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 12px;
+}
+
+.img-grid {
+  display: block;
+}
+
+.img-grid img {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: #ffea01 2px solid;
+}
+.img-grid h6 a {
+  color: #ffea01;
+}
+
+.mealtime-footer {
+  text-align: center;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffea01;
+  color: #272727;
+  margin-top: 20px;
+}
+.mealtime-footer p {
+  margin-bottom: 0;
+  color: #272727;
+  font-weight: 300;
+}
+#year,
+.footer-txt {
+  color: #272727;
+}
+
+.mealtime-footer a {
+  color: #272727;
+}
+
+.about-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+
+.about-img img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: #ffea01 2px solid;
+}
+
+.about-details h2 p {
+  margin-bottom: 1.38rem;
+}
+
+.details,
+.para-details {
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+
+.about-recipe-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffea01;
+}
+
+.tag-template-title {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  color: #ffea01;
+}
+
+.recipe-container-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.tag-grid {
+  display: block;
+  height: 5rem;
+  width: 100%;
+  background-color: #363636;
+  border-radius: 10px;
+  border: #ffea01 2px solid;
+  text-align: center;
+  padding: 5% 0;
+}
+.tag-grid:hover {
+  background-color: #141414;
+  border: #fffffa 2px solid;
+  color: #272727;
+}
+.tag-grid h6 {
+  color: #ffea01;
+}
+
+.feedback-input {
+  color: white;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #ffea01;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #ffed29;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background-color: #363636;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #ffea01;
+  border: #ffea01 2px solid;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background-color: #141414;
+  border: #fffffa 2px solid;
+  color: #ffea01;
+}
+
+.recipe-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.recipe-icons i {
+  font-size: 1.5rem;
+  color: #ffea01;
+}
+
+.recipe-icons p {
+  font-size: 12px;
+  color: #ffea01;
+}
+
+.recipe-tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.recipe-tags a {
+  padding: 5px 16px;
+  background-color: #ffea01;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  font-weight: 600;
+  color: #272727;
+  margin-left: 5px;
+}
+
+.recipe-tags a:hover {
+  background-color: rgba(255, 234, 1, 0.7);
+}
+
+.single-recipe-img img {
+  height: 29rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: #ffea01 3px solid;
+}
+
+.single-recipe {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem 5rem;
+  padding: 3rem 0;
+}
+
+.single-instruction header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+.single-instruction header p {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffea01;
+  margin-bottom: 0;
+}
+.single-instruction > p {
+  color: #fffffa;
+  margin-bottom: 1.5em;
+  text-align: justify;
+}
+.single-instruction header div {
+  height: 2px;
+  background: #363636;
+}
+
+.second-column {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.single-ingredient {
+  border-bottom: 2px solid #363636;
+  padding-bottom: 0.75rem;
+  color: #fffffa;
+  margin-top: 10px;
+}
+.single-tool {
+  border-bottom: 2px solid #363636;
+  padding-bottom: 0.75rem;
+  color: #fffffa;
+  text-transform: capitalize;
+}
